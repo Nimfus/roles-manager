@@ -10,6 +10,6 @@ Nimfus\RolesManager\RolesManagerServiceProvider::class.
 
 Publish settings and migrations with php artisan vendor:publish.
 
-Run php artisan:migrate
+Run php artisan migrate
 
 
