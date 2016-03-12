@@ -14,6 +14,14 @@ trait UserRolesTrait
     }
 
     /**
+     * @return mixed
+     */
+    public function role()
+    {
+        return $this->hasOne(config('roles_manager.models.role'), 'id');
+    }
+
+    /**
      * @param $roleName
      * @return bool
      */
