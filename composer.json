@@ -14,7 +14,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Nimfus\\RolesManager": "src/"
+            "Nimfus\\RolesManager\\": "src/"
         }
     }
 }
