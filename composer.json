@@ -1,0 +1,14 @@
+{
+    "name": "nimfus/roles-manager",
+    "description": "Laravel 5 package for user roles management",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Viacheslav Skydanchuk",
+            "email": "nimfus@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
