@@ -17,11 +17,11 @@ class RolesManagerServiceProvider extends ServiceProvider
         $router->middleware('role', 'Nimfus\RolesManager\Middleware\Role');
 
         $this->publishes([
-            __DIR__.'Config/roles_manager.php' => config_path('roles_manager.php'),
+            __DIR__.'/Config/roles_manager.php' => config_path('roles_manager.php'),
         ], 'config');
 
         $this->publishes([
-            __DIR__.'Migrations/' => database_path('/migrations'),
+            __DIR__.'/Migrations/' => database_path('/migrations'),
         ], 'migrations');
     }
 
