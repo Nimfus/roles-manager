@@ -10,7 +10,7 @@ trait UserRolesTrait
      */
     public function roles()
     {
-        return $this->belongsToMany(config('roles_manager.models.role'))->withTimestamps();
+        return $this->belongsToMany(config('roles_manager.models.role'), 'manager_user_roles', 'user_id', 'role_id')->withTimestamps();
     }
 
     /**

@@ -12,6 +12,6 @@ class Role extends Model
 
     public function users()
     {
-        return $this->belongsToMany(config('roles_manager.models.user'), 'user_roles', 'user_id', 'role_id')->withTimestamps();
+        return $this->belongsToMany(config('roles_manager.models.user'), 'manager_user_roles', 'user_id', 'role_id')->withTimestamps();
     }
 }
