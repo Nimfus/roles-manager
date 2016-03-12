@@ -3,6 +3,7 @@
     "description": "Laravel 5 package for user roles management",
     "type": "library",
     "license": "MIT",
+    "keywords": ["laravel", "roles", "management"],
     "authors": [
         {
             "name": "Viacheslav Skydanchuk",
@@ -10,5 +11,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nimfus\\RolesManager": "src/"
+        }
+    }
 }
