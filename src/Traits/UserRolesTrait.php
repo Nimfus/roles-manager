@@ -28,7 +28,7 @@ trait UserRolesTrait
     public function hasRole($roleName)
     {
         foreach ($this->roles as $role) {
-            if($role == $roleName) {
+            if($role->name == $roleName) {
                 return true;
             }
         }

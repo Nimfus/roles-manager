@@ -13,7 +13,7 @@ class Role
      * @param string $redirect_path
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
-    public function handle($request, Closure $next, $role, $redirect_path = 'auth/login')
+    public function handle($request, Closure $next, $role, $redirect_path = 'login')
     {
         if(auth()->check() && auth()->user()->hasRole($role)) {
             return $next($request);
